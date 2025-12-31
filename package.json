@@ -16,7 +16,7 @@
   },
   "build": {
     "appId": "com.henrya.app.japaneseletters",
-    "productName": "Japanese Letters",
+    "productName": "japanese-letters",
     "files": [
       "build/**/*",
       "package.json"
