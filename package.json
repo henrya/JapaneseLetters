@@ -1,28 +1,67 @@
 {
   "name": "japanese-letters-react",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/dom": "^10.4.1",
+  "description": "A simple quiz app for learning Japanese letters and vocabulary",
+  "author": "Henry Algus",
+  "homepage": "./",
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
+    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "build": {
+    "appId": "com.example.japanesequiz",
+    "productName": "Japanese Letters",
+    "files": [
+      "build/**/*",
+      "package.json"
+    ],
+    "icon": "public/icons/icon.svg",
+    "directories": {
+      "buildResources": "build"
+    },
+    "extraResources": [
+      {
+        "from": "public/electron.js",
+        "to": "electron.js"
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "concurrently": "^9.2.1",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "less": "^4.5.1",
+    "less-loader": "^12.3.0",
+    "typescript": "^4.9.5",
+    "wait-on": "^9.0.3"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.6",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^5.1.0"
   },
   "browserslist": {
     "production": [
