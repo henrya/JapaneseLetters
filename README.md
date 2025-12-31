@@ -17,7 +17,7 @@ This is a simple React application for quizzing yourself on Japanese Hiragana, K
 
     ```bash
     git clone https://github.com/henrya/JapaneseLetters.git
-    cd japanese-letters
+    cd JapaneseLetters
     ```
 
 2. **Install dependencies:**
