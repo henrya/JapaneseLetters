@@ -15,7 +15,7 @@
     "electron:build": "npm run build && electron-builder"
   },
   "build": {
-    "appId": "com.example.japanesequiz",
+    "appId": "com.henrya.app.japaneseletters",
     "productName": "Japanese Letters",
     "files": [
       "build/**/*",
