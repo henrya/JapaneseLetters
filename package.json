@@ -19,9 +19,10 @@
     "productName": "japanese-letters",
     "files": [
       "build/**/*",
-      "package.json"
+      "package.json",
+      "public/icon.png"
     ],
-    "icon": "public/icons/icon.svg",
+    "icon": "public/icon.png",
     "directories": {
       "buildResources": "build"
     },
@@ -29,6 +30,10 @@
       {
         "from": "public/electron.js",
         "to": "electron.js"
+      },
+      {
+        "from": "public/icon.png",
+        "to": "icon.png"
       }
     ],
     "win": {
