@@ -16,7 +16,7 @@
   },
   "build": {
     "appId": "com.henrya.app.japaneseletters",
-    "productName": "japanese-letters",
+    "productName": "JapaneseLetters",
     "files": [
       "build/**/*",
       "package.json",
@@ -37,7 +37,15 @@
       }
     ],
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "public/favicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "installerIcon": "public/favicon.ico",
+      "uninstallerIcon": "public/favicon.ico"
     },
     "mac": {
       "target": "dmg"
