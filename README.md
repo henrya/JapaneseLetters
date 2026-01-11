@@ -7,9 +7,11 @@ This is a simple React application for quizzing yourself on Japanese Hiragana, K
 * **Material-UI:** A comprehensive React UI library for building user interfaces.
 * **React:** A JavaScript library for building user interfaces.
 * **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
-* **LESS:** A dynamic stylesheet language that extends CSS.
-* **Jest:** A delightful JavaScript Testing Framework with a focus on simplicity.
-* **React Testing Library:** A set of utilities for testing React components.
+*   **LESS:** A dynamic stylesheet language that extends CSS.
+*   **Jest:** A delightful JavaScript Testing Framework with a focus on simplicity.
+*   **React Testing Library:** A set of utilities for testing React components.
+*   **Electron:** A framework for building cross-platform desktop apps with web technologies.
+*   **Electron Builder:** A complete solution to package and build a ready for distribution Electron app.
 
 ## Setup
 
