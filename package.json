@@ -12,7 +12,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron:build": "npm run build && electron-builder"
+    "electron:build": "GENERATE_SOURCEMAP=false npm run build && electron-builder"
   },
   "build": {
     "appId": "com.henrya.app.japaneseletters",
@@ -20,11 +20,13 @@
     "files": [
       "build/**/*",
       "package.json",
-      "public/icon.png"
+      "public/icon.png",
+      "public/preload.js"
     ],
     "icon": "public/icon.png",
     "directories": {
-      "buildResources": "build"
+      "buildResources": "build",
+      "output": "dist"
     },
     "extraResources": [
       {
@@ -32,26 +34,124 @@
         "to": "electron.js"
       },
       {
+        "from": "public/preload.js",
+        "to": "preload.js"
+      },
+      {
         "from": "public/icon.png",
         "to": "icon.png"
       }
     ],
+    "publish": {
+      "provider": "github",
+      "owner": "henrya",
+      "repo": "JapaneseLetters"
+    },
     "win": {
-      "target": "nsis",
-      "icon": "public/favicon.ico"
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "public/favicon.ico",
+      "publisherName": "Henry Algus"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
       "artifactName": "${productName}-Setup-${version}.${ext}",
       "installerIcon": "public/favicon.ico",
-      "uninstallerIcon": "public/favicon.ico"
+      "uninstallerIcon": "public/favicon.ico",
+      "license": "LICENSE"
     },
     "mac": {
-      "target": "dmg"
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "category": "public.app-category.education",
+      "icon": "public/icon.png",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "darkModeSupport": true
+    },
+    "dmg": {
+      "artifactName": "${productName}-${version}.${ext}",
+      "sign": false
     },
     "linux": {
-      "target": "AppImage"
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "rpm",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "category": "Education",
+      "maintainer": "Henry Algus",
+      "icon": "public/icon.png",
+      "synopsis": "Learn Japanese Hiragana, Katakana, and JLPT vocabulary",
+      "description": "Interactive quiz application for learning Japanese letters and vocabulary with support for JLPT levels N5-N1."
+    },
+    "appImage": {
+      "artifactName": "${productName}-${version}.${ext}"
+    },
+    "deb": {
+      "artifactName": "${productName}-${version}.${ext}",
+      "depends": [
+        "libgtk-3-0",
+        "libnotify4",
+        "libnss3",
+        "libxss1",
+        "libxtst6",
+        "xdg-utils",
+        "libatspi2.0-0",
+        "libuuid1"
+      ]
+    },
+    "rpm": {
+      "artifactName": "${productName}-${version}.${ext}",
+      "depends": [
+        "gtk3",
+        "libnotify",
+        "nss",
+        "libXScrnSaver",
+        "libXtst",
+        "xdg-utils",
+        "at-spi2-core",
+        "libuuid"
+      ]
     }
   },
   "devDependencies": {
@@ -63,11 +163,11 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "concurrently": "^9.2.1",
-    "electron": "^28.2.0",
+    "electron": "^33.0.0",
     "electron-builder": "^24.9.1",
     "less": "^4.5.1",
     "less-loader": "^12.3.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.7.2",
     "wait-on": "^9.0.3"
   },
   "dependencies": {

@@ -1,6 +1,20 @@
 # Japanese Letters Quiz
 
+[![CI](https://github.com/henrya/JapaneseLetters/workflows/CI/badge.svg)](https://github.com/henrya/JapaneseLetters/actions/workflows/ci.yml)
+[![Build](https://github.com/henrya/JapaneseLetters/workflows/Build/badge.svg)](https://github.com/henrya/JapaneseLetters/actions/workflows/build.yml)
+[![Release](https://github.com/henrya/JapaneseLetters/workflows/Release/badge.svg)](https://github.com/henrya/JapaneseLetters/actions/workflows/release.yml)
+
 This is a simple React application for quizzing yourself on Japanese Hiragana, Katakana, and Vocabulary. The vocabulary section now includes quizzes for specific JLPT levels (N5, N4, N3, N2, and N1) as well as a combined "All Vocabulary" option. Vocabulary answers are displayed in Kana.
+
+## 📥 Download
+
+Get the latest version for your platform:
+
+- **Windows**: [Download Installer](https://github.com/henrya/JapaneseLetters/releases/latest)
+- **macOS**: [Download DMG](https://github.com/henrya/JapaneseLetters/releases/latest)
+- **Linux**: [Download AppImage](https://github.com/henrya/JapaneseLetters/releases/latest) | [.deb](https://github.com/henrya/JapaneseLetters/releases/latest) | [.rpm](https://github.com/henrya/JapaneseLetters/releases/latest)
+
+The app includes automatic updates, so you'll always have the latest features!
 
 ## Technologies Used
 

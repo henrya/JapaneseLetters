@@ -9,10 +9,19 @@ function createWindow() {
     title: 'Japanese Letters',
     autoHideMenuBar: true,
     resizable: false,
+    show: false, // Don't show until ready
+    backgroundColor: '#1a1a1a', // Match dark theme background
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
+      nodeIntegration: false,
+      contextIsolation: true,
+      sandbox: true,
+      preload: path.join(__dirname, 'preload.js'),
     },
+  });
+
+  // Show window when ready to prevent white flash
+  win.once('ready-to-show', () => {
+    win.show();
   });
 
   // Load the index.html of the app.

@@ -1,16 +1,17 @@
-name: Node.js CI
+name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
     branches: [ main ]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build:
+  test:
+    name: Test (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
 
     strategy:
@@ -21,7 +22,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
@@ -30,13 +31,44 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Run TypeScript type check
+      run: npx tsc --noEmit
+
     - name: Run tests
-      run: npm test -- --watchAll=false
+      run: npm test -- --watchAll=false --coverage
 
-    - name: Build project
+    - name: Upload coverage reports
+      if: matrix.node-version == '20.x'
+      uses: codecov/codecov-action@v3
+      continue-on-error: true
+
+    - name: Build web app
       run: npm run build
-
-    - name: Build Electron app
-      run: npm run electron:build
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GENERATE_SOURCEMAP: false
+
+  security:
+    name: Security Audit
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run security audit
+      run: npm audit --audit-level=moderate
+      continue-on-error: true
+
+    - name: Check for outdated dependencies
+      run: npm outdated
+      continue-on-error: true
+

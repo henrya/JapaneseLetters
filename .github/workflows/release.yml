@@ -1,0 +1,156 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., v1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build and Release ${{ matrix.platform }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: Windows
+          - os: macos-latest
+            platform: macOS
+          - os: ubuntu-latest
+            platform: Linux
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests
+      run: npm test -- --watchAll=false
+
+    - name: Build web app
+      run: npm run build
+      env:
+        GENERATE_SOURCEMAP: false
+
+    - name: Build Electron app
+      run: npm run electron:build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Code signing (optional - add secrets if available)
+        # CSC_LINK: ${{ secrets.CSC_LINK }}
+        # CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+        # APPLE_ID: ${{ secrets.APPLE_ID }}
+        # APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
+        # APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ matrix.platform }}-release
+        path: |
+          dist/*.exe
+          dist/*.dmg
+          dist/*.zip
+          dist/*.AppImage
+          dist/*.deb
+          dist/*.rpm
+          dist/*.yml
+        retention-days: 90
+
+  create-release:
+    name: Create GitHub Release
+    needs: build-and-release
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Display structure of downloaded files
+      run: ls -R artifacts
+
+    - name: Get version from tag
+      id: get_version
+      run: |
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          echo "version=${{ inputs.version }}" >> $GITHUB_OUTPUT
+        else
+          echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Generate release notes
+      id: release_notes
+      run: |
+        cat > release_notes.md << 'EOF'
+        ## 🎉 Japanese Letters ${{ steps.get_version.outputs.version }}
+        
+        ### 📦 Downloads
+        
+        Choose the installer for your platform:
+        
+        - **Windows**: `JapaneseLetters-Setup-*.exe`
+        - **macOS**: `JapaneseLetters-*.dmg`
+        - **Linux**: `JapaneseLetters-*.AppImage` (universal) or `.deb`/`.rpm` (package managers)
+        
+        ### ✨ What's New
+        
+        See the [commit history](https://github.com/${{ github.repository }}/commits/${{ steps.get_version.outputs.version }}) for details.
+        
+        ### 🔄 Auto-Update
+        
+        The app includes auto-update functionality. Existing users will be notified of this update automatically.
+        
+        ### 📝 Installation
+        
+        **Windows**: Run the installer and follow the prompts.
+        **macOS**: Open the DMG and drag to Applications.
+        **Linux**: Make the AppImage executable and run it.
+        
+        ---
+        
+        **Full Changelog**: https://github.com/${{ github.repository }}/compare/...
+        EOF
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.get_version.outputs.version }}
+        name: Japanese Letters ${{ steps.get_version.outputs.version }}
+        body_path: release_notes.md
+        draft: false
+        prerelease: ${{ contains(steps.get_version.outputs.version, 'alpha') || contains(steps.get_version.outputs.version, 'beta') }}
+        files: |
+          artifacts/**/*.exe
+          artifacts/**/*.dmg
+          artifacts/**/*.zip
+          artifacts/**/*.AppImage
+          artifacts/**/*.deb
+          artifacts/**/*.rpm
+          artifacts/**/*.yml
+        fail_on_unmatched_files: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

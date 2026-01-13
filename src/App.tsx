@@ -11,7 +11,9 @@ function App() {
     question,
     answers,
     correct,
+    correctAnswer,
     handleAnswerClick,
+    handleNextQuestion,
     handleNavClick,
   } = useQuiz('hiragana');
 
@@ -27,7 +29,11 @@ function App() {
               onAnswerClick={handleAnswerClick}
             />
           )}
-          <Message correct={correct} />
+          <Message
+            correct={correct}
+            correctAnswer={correctAnswer}
+            onNextQuestion={handleNextQuestion}
+          />
         </Container>
       </main>
     </AppThemeProvider>
