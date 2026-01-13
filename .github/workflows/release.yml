@@ -119,8 +119,6 @@ jobs:
         
         See the [commit history](https://github.com/${{ github.repository }}/commits/${{ steps.get_version.outputs.version }}) for details.
         
-
-        
         ### 📝 Installation
         
         **Windows**: Run the installer and follow the prompts.
@@ -129,7 +127,7 @@ jobs:
         
         ---
         
-        **Full Changelog**: https://github.com/${{ github.repository }}/compare/...
+        **Full Changelog**: https://github.com/${{ github.repository }}/compare/v0.0.0...${{ steps.get_version.outputs.version }}
         EOF
 
     - name: Create Release
