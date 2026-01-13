@@ -68,7 +68,6 @@ jobs:
         name: ${{ matrix.platform }}-release
         path: |
           dist/*.exe
-          dist/*.dmg
           dist/*.zip
           dist/*.AppImage
           dist/*.deb
@@ -113,7 +112,7 @@ jobs:
         Choose the installer for your platform:
         
         - **Windows**: `JapaneseLetters-Setup-*.exe`
-        - **macOS**: `JapaneseLetters-*.dmg`
+        - **macOS**: `JapaneseLetters-*.zip` (Intel & Apple Silicon)
         - **Linux**: `JapaneseLetters-*.AppImage` (universal) or `.deb`/`.rpm` (package managers)
         
         ### ✨ What's New
@@ -127,7 +126,7 @@ jobs:
         ### 📝 Installation
         
         **Windows**: Run the installer and follow the prompts.
-        **macOS**: Open the DMG and drag to Applications.
+        **macOS**: Open the ZIP and drag to Applications.
         **Linux**: Make the AppImage executable and run it.
         
         ---
@@ -145,7 +144,6 @@ jobs:
         prerelease: ${{ contains(steps.get_version.outputs.version, 'alpha') || contains(steps.get_version.outputs.version, 'beta') }}
         files: |
           artifacts/**/*.exe
-          artifacts/**/*.dmg
           artifacts/**/*.zip
           artifacts/**/*.AppImage
           artifacts/**/*.deb

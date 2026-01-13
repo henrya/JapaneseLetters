@@ -11,7 +11,7 @@ This is a simple React application for quizzing yourself on Japanese Hiragana, K
 Get the latest version for your platform:
 
 - **Windows**: [Download Installer](https://github.com/henrya/JapaneseLetters/releases/latest)
-- **macOS**: [Download DMG](https://github.com/henrya/JapaneseLetters/releases/latest)
+- **macOS**: [Download ZIP](https://github.com/henrya/JapaneseLetters/releases/latest)
 - **Linux**: [Download AppImage](https://github.com/henrya/JapaneseLetters/releases/latest) | [.deb](https://github.com/henrya/JapaneseLetters/releases/latest) | [.rpm](https://github.com/henrya/JapaneseLetters/releases/latest)
 
 The app includes automatic updates, so you'll always have the latest features!
