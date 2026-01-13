@@ -72,7 +72,7 @@ jobs:
           dist/*.AppImage
           dist/*.deb
           dist/*.rpm
-          dist/*.yml
+          dist/latest*.yml
         retention-days: 90
 
   create-release:
@@ -119,9 +119,7 @@ jobs:
         
         See the [commit history](https://github.com/${{ github.repository }}/commits/${{ steps.get_version.outputs.version }}) for details.
         
-        ### 🔄 Auto-Update
-        
-        The app includes auto-update functionality. Existing users will be notified of this update automatically.
+
         
         ### 📝 Installation
         
@@ -148,7 +146,7 @@ jobs:
           artifacts/**/*.AppImage
           artifacts/**/*.deb
           artifacts/**/*.rpm
-          artifacts/**/*.yml
+          artifacts/**/latest*.yml
         fail_on_unmatched_files: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
