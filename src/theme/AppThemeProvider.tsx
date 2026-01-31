@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  useMediaQuery,
-  ThemeProvider,
-  GlobalStyles,
-  CssBaseline,
-} from '@mui/material';
+import { useMediaQuery, ThemeProvider, GlobalStyles, CssBaseline } from '@mui/material';
 import { getAppTheme } from './theme';
 
 interface AppThemeProviderProps {

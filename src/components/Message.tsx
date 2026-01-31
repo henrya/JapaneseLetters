@@ -20,12 +20,7 @@ const Message: React.FC<MessageProps> = ({ correct, correctAnswer, onNextQuestio
           <Alert severity="error" sx={{ mb: 2 }}>
             Wrong! The correct answer is: <strong>{correctAnswer}</strong>
           </Alert>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={onNextQuestion}
-            fullWidth
-          >
+          <Button variant="contained" color="primary" onClick={onNextQuestion} fullWidth>
             Next Question
           </Button>
         </>

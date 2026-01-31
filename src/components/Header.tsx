@@ -28,16 +28,10 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
     <AppBar position="static" className={styles.appBar}>
       <Toolbar>
         <Box>
-          <Button
-            className={styles.navButton}
-            onClick={() => onNavClick('hiragana')}
-          >
+          <Button className={styles.navButton} onClick={() => onNavClick('hiragana')}>
             Hiragana
           </Button>
-          <Button
-            className={styles.navButton}
-            onClick={() => onNavClick('katakana')}
-          >
+          <Button className={styles.navButton} onClick={() => onNavClick('katakana')}>
             Katakana
           </Button>
           <Button
@@ -64,9 +58,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
             <MenuItem onClick={() => handleMenuItemClick('n3')}>N3</MenuItem>
             <MenuItem onClick={() => handleMenuItemClick('n2')}>N2</MenuItem>
             <MenuItem onClick={() => handleMenuItemClick('n1')}>N1</MenuItem>
-            <MenuItem onClick={() => handleMenuItemClick('vocabulary')}>
-              All Vocabulary
-            </MenuItem>
+            <MenuItem onClick={() => handleMenuItemClick('vocabulary')}>All Vocabulary</MenuItem>
           </Menu>
         </Box>
       </Toolbar>

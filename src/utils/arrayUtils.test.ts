@@ -23,7 +23,7 @@ describe('shuffleArray', () => {
   it('should produce a predictable shuffle when Math.random is mocked', () => {
     const array = [1, 2, 3, 4, 5];
     const mockRandom = jest.spyOn(Math, 'random').mockReturnValue(0.5);
-    
+
     const shuffled = shuffleArray(array);
     // Based on the Fisher-Yates algorithm and a constant 0.5 random value,
     // the shuffle will be deterministic.
