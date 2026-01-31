@@ -5,15 +5,16 @@ import Quiz from './Quiz';
 describe('Quiz', () => {
   it('renders the question and answers', () => {
     const question = 'あ';
-    const answers = [['a', 'あ'], ['i', 'い'], ['u', 'う'], ['e', 'え']];
+    const answers = [
+      ['a', 'あ'],
+      ['i', 'い'],
+      ['u', 'う'],
+      ['e', 'え'],
+    ];
     const onAnswerClick = jest.fn();
 
     const { getByText } = render(
-      <Quiz
-        question={question}
-        answers={answers}
-        onAnswerClick={onAnswerClick}
-      />
+      <Quiz question={question} answers={answers} onAnswerClick={onAnswerClick} />
     );
 
     expect(getByText('あ')).toBeInTheDocument();
@@ -25,15 +26,16 @@ describe('Quiz', () => {
 
   it('calls onAnswerClick with the correct answer when a button is clicked', () => {
     const question = 'あ';
-    const answers = [['a', 'あ'], ['i', 'い'], ['u', 'う'], ['e', 'え']];
+    const answers = [
+      ['a', 'あ'],
+      ['i', 'い'],
+      ['u', 'う'],
+      ['e', 'え'],
+    ];
     const onAnswerClick = jest.fn();
 
     const { getByText } = render(
-      <Quiz
-        question={question}
-        answers={answers}
-        onAnswerClick={onAnswerClick}
-      />
+      <Quiz question={question} answers={answers} onAnswerClick={onAnswerClick} />
     );
 
     fireEvent.click(getByText('a'));

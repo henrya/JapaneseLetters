@@ -27,11 +27,7 @@ const Quiz: React.FC<QuizProps> = ({ question, answers, onAnswerClick }) => {
   }, [answers, onAnswerClick]);
 
   return (
-    <Box
-      className={styles.quizContainer}
-      role="main"
-      aria-label="Japanese quiz application"
-    >
+    <Box className={styles.quizContainer} role="main" aria-label="Japanese quiz application">
       <Typography variant="h3" component="h1" gutterBottom align="center" className={styles.title}>
         Japanese Letters
       </Typography>
@@ -62,7 +58,9 @@ const Quiz: React.FC<QuizProps> = ({ question, answers, onAnswerClick }) => {
             <React.Fragment key={answer[0]}>
               <Grid size={{ xs: 6, sm: 3 }} sx={{ mb: 2 }}>
                 <Button
-                  ref={(el) => { buttonRefs.current[index] = el; }}
+                  ref={(el) => {
+                    buttonRefs.current[index] = el;
+                  }}
                   variant="contained"
                   size="large"
                   fullWidth

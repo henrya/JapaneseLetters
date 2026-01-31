@@ -27,7 +27,7 @@ describe('useQuiz', () => {
     expect(result.current.answers).toHaveLength(4);
 
     // The correct answer 'n' should be one of the options.
-    const answerOptions = result.current.answers.map(ans => ans[0]);
+    const answerOptions = result.current.answers.map((ans) => ans[0]);
     expect(answerOptions).toContain('n');
   });
 
@@ -37,7 +37,7 @@ describe('useQuiz', () => {
     // Based on the mock, the last item in n5.json becomes the first.
     // Question is english, answer is kana.
     expect(result.current.question).toBe('grandfather');
-    const answerOptions = result.current.answers.map(ans => ans[0]);
+    const answerOptions = result.current.answers.map((ans) => ans[0]);
     expect(answerOptions).toContain('おじいさん');
   });
 
@@ -93,7 +93,7 @@ describe('useQuiz', () => {
     // The question should now be from the N1 data set.
     // The last item in n1.json is ["unaru", "to groan, to moan n."] -> ["うなる", ...].
     expect(result.current.question).toBe('to groan, to moan n.');
-    const answerOptions = result.current.answers.map(ans => ans[0]);
+    const answerOptions = result.current.answers.map((ans) => ans[0]);
     expect(answerOptions).toContain('うなる');
   });
 });

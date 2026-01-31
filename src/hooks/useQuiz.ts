@@ -12,15 +12,7 @@ import n1 from '../data/n1.json';
 const ANSWER_COUNT = 4;
 const CORRECT_ANSWER_DELAY_MS = 1000;
 
-export type QuizType =
-  | 'hiragana'
-  | 'katakana'
-  | 'n5'
-  | 'n4'
-  | 'n3'
-  | 'n2'
-  | 'n1'
-  | 'vocabulary';
+export type QuizType = 'hiragana' | 'katakana' | 'n5' | 'n4' | 'n3' | 'n2' | 'n1' | 'vocabulary';
 
 const data: Record<Exclude<QuizType, 'vocabulary'>, string[][]> = {
   hiragana,

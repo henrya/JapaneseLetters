@@ -1,6 +1,6 @@
 {
   "name": "japanese-letters-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A simple quiz app for learning Japanese letters and vocabulary",
   "author": "Henry Algus",
@@ -8,11 +8,16 @@
   "main": "public/electron.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "cross-env ESLINT_NO_DEV_ERRORS=true DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "cross-env NODE_OPTIONS='--no-deprecation' react-scripts test",
     "eject": "react-scripts eject",
     "electron:dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron:build": "npm run build && electron-builder"
+    "electron:build": "npm run build && electron-builder",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,less,md,json}\"",
+    "coverage": "cross-env CI=true NODE_OPTIONS='--no-deprecation' react-scripts test --coverage --watchAll=false",
+    "ci": "npm run lint && tsc --noEmit && npm run coverage"
   },
   "build": {
     "appId": "com.henrya.app.japaneseletters",
@@ -151,17 +156,32 @@
     "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
     "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
     "electron": "^33.0.0",
     "electron-builder": "^24.9.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "less": "^4.5.1",
     "less-loader": "^12.3.0",
-    "typescript": "^5.7.2",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
     "wait-on": "^9.0.3"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.6",
+    "@testing-library/dom": "^10.4.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "react-scripts": "^5.0.1",
     "web-vitals": "^5.1.0"
   },
@@ -176,5 +196,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "@typescript-eslint/parser": "$@typescript-eslint/parser",
+    "@typescript-eslint/eslint-plugin": "$@typescript-eslint/eslint-plugin"
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
 // Regex to check for Japanese characters (Hiragana, Katakana, Kanji)
@@ -16,12 +16,25 @@ describe('App Integration Test', () => {
     fireEvent.click(n3MenuItem);
 
     await screen.findByText('What is this?');
-    
+
     const answerButtons = screen.getAllByRole('button');
 
     for (const button of answerButtons) {
       const buttonText = button.textContent || '';
-      if (['hiragana', 'katakana', 'vocabulary', 'n5', 'n4', 'n3', 'n2', 'n1', 'all vocabulary'].includes(buttonText.toLowerCase())) continue;
+      if (
+        [
+          'hiragana',
+          'katakana',
+          'vocabulary',
+          'n5',
+          'n4',
+          'n3',
+          'n2',
+          'n1',
+          'all vocabulary',
+        ].includes(buttonText.toLowerCase())
+      )
+        continue;
       expect(isJapanese(buttonText)).toBe(true);
     }
   });
@@ -36,12 +49,25 @@ describe('App Integration Test', () => {
     fireEvent.click(n1MenuItem);
 
     await screen.findByText('What is this?');
-    
+
     const answerButtons = screen.getAllByRole('button');
 
     for (const button of answerButtons) {
       const buttonText = button.textContent || '';
-      if (['hiragana', 'katakana', 'vocabulary', 'n5', 'n4', 'n3', 'n2', 'n1', 'all vocabulary'].includes(buttonText.toLowerCase())) continue;
+      if (
+        [
+          'hiragana',
+          'katakana',
+          'vocabulary',
+          'n5',
+          'n4',
+          'n3',
+          'n2',
+          'n1',
+          'all vocabulary',
+        ].includes(buttonText.toLowerCase())
+      )
+        continue;
       expect(isJapanese(buttonText)).toBe(true);
     }
   });
@@ -56,12 +82,25 @@ describe('App Integration Test', () => {
     fireEvent.click(allVocabularyMenuItem);
 
     await screen.findByText('What is this?');
-    
+
     const answerButtons = screen.getAllByRole('button');
 
     for (const button of answerButtons) {
       const buttonText = button.textContent || '';
-      if (['hiragana', 'katakana', 'vocabulary', 'n5', 'n4', 'n3', 'n2', 'n1', 'all vocabulary'].includes(buttonText.toLowerCase())) continue;
+      if (
+        [
+          'hiragana',
+          'katakana',
+          'vocabulary',
+          'n5',
+          'n4',
+          'n3',
+          'n2',
+          'n1',
+          'all vocabulary',
+        ].includes(buttonText.toLowerCase())
+      )
+        continue;
       expect(isJapanese(buttonText)).toBe(true);
     }
   });

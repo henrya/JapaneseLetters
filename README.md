@@ -1,6 +1,7 @@
 # Japanese Letters Quiz
 
 [![CI](https://github.com/henrya/JapaneseLetters/workflows/CI/badge.svg)](https://github.com/henrya/JapaneseLetters/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/henrya/JapaneseLetters/branch/main/graph/badge.svg)](https://codecov.io/gh/henrya/JapaneseLetters)
 [![Build](https://github.com/henrya/JapaneseLetters/workflows/Build/badge.svg)](https://github.com/henrya/JapaneseLetters/actions/workflows/build.yml)
 [![Release](https://github.com/henrya/JapaneseLetters/workflows/Release/badge.svg)](https://github.com/henrya/JapaneseLetters/actions/workflows/release.yml)
 
@@ -24,6 +25,8 @@ Get the latest version for your platform:
 *   **React Testing Library:** A set of utilities for testing React components.
 *   **Electron:** A framework for building cross-platform desktop apps with web technologies.
 *   **Electron Builder:** A complete solution to package and build a ready for distribution Electron app.
+*   **ESLint:** A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+*   **Prettier:** An opinionated code formatter that ensures consistent style across the codebase.
 
 ## Setup
 
@@ -72,3 +75,23 @@ Runs the app in a desktop development environment using Electron. This will open
 ### `npm run electron:build`
 
 Packages the application for production for Windows, macOS, and Linux using `electron-builder`. The distributable files can be found in the `dist` folder.
+
+### `npm run lint`
+
+Runs ESLint to check the source code for potential errors and code style issues.
+
+### `npm run lint:fix`
+
+Runs ESLint with the `--fix` flag to automatically correct fixable linting and formatting issues.
+
+### `npm run format`
+
+Formats all source files (TS, TSX, CSS, LESS, JSON, MD) using Prettier to ensure consistent code style.
+
+### `npm run coverage`
+
+Runs the test runner and generates a comprehensive code coverage report in the `coverage` folder.
+
+### `npm run ci`
+
+Runs `lint`, `type-check` (via `tsc`), and `coverage` sequentially. This is used in the CI pipeline to ensure code quality and test passing before merges.

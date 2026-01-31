@@ -23,11 +23,7 @@ function App() {
       <main>
         <Container>
           {question && (
-            <Quiz
-              question={question}
-              answers={answers}
-              onAnswerClick={handleAnswerClick}
-            />
+            <Quiz question={question} answers={answers} onAnswerClick={handleAnswerClick} />
           )}
           <Message
             correct={correct}
