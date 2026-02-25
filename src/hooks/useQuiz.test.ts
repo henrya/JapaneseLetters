@@ -1,9 +1,10 @@
 import { renderHook, act } from '@testing-library/react';
+import { vi } from 'vitest';
 import { useQuiz } from './useQuiz';
 
 // Mock the shuffleArray to make tests deterministic
 // It returns a reversed copy of the input array.
-jest.mock('../utils/arrayUtils', () => ({
+vi.mock('../utils/arrayUtils', () => ({
   shuffleArray: <T>(array: T[]): T[] => {
     return [...array].reverse();
   },
@@ -11,11 +12,11 @@ jest.mock('../utils/arrayUtils', () => ({
 
 describe('useQuiz', () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    vi.useFakeTimers();
   });
 
   afterEach(() => {
-    jest.useRealTimers();
+    vi.useRealTimers();
   });
 
   it('should initialize with a hiragana quiz and set the first question', () => {
@@ -55,7 +56,7 @@ describe('useQuiz', () => {
 
     // Fast-forward past the 1-second timeout
     act(() => {
-      jest.runAllTimers();
+      vi.runAllTimers();
     });
 
     // A new question should be generated, and `correct` should be reset to null.
@@ -75,7 +76,7 @@ describe('useQuiz', () => {
 
     // Fast-forward to ensure the question does NOT change on incorrect answer
     act(() => {
-      jest.runAllTimers();
+      vi.runAllTimers();
     });
     expect(result.current.question).toBe('ん');
     expect(result.current.correct).toBe(false); // State should persist

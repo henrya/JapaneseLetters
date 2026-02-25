@@ -45,7 +45,7 @@ jobs:
       run: npm ci --legacy-peer-deps
 
     - name: Run tests
-      run: npm test -- --watchAll=false
+      run: npm test -- --run
 
     - name: Build web app
       run: npm run build

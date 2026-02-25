@@ -1,230 +1,59 @@
 [
-  [
-    "あ",
-    "Ah"
-  ],
-  [
-    "ああ",
-    "like that, that way"
-  ],
-  [
-    "あいさつ する",
-    "greeting"
-  ],
-  [
-    "あいだ",
-    "space"
-  ],
-  [
-    "あう",
-    "to meet, to fit, to match"
-  ],
-  [
-    "あかちゃん",
-    "infant"
-  ],
-  [
-    "あがる",
-    "to rise"
-  ],
-  [
-    "あかんぼう",
-    "baby, infant"
-  ],
-  [
-    "アクセサリイ",
-    "accessory"
-  ],
-  [
-    "あじ",
-    "flavour, taste"
-  ],
-  [
-    "アジア",
-    "Asia"
-  ],
-  [
-    "あす",
-    "tomorrow"
-  ],
-  [
-    "あさい",
-    "shallow, superficial"
-  ],
-  [
-    "あしおと",
-    "sound of footsteps"
-  ],
-  [
-    "あそび",
-    "play, playing"
-  ],
-  [
-    "あつまる",
-    "to gather, to collect, to assemble"
-  ],
-  [
-    "あつめる",
-    "to collect, to assemble, to gather"
-  ],
-  [
-    "アナウンサア",
-    "announcer"
-  ],
-  [
-    "アフリカ",
-    "Africa"
-  ],
-  [
-    "アメリカ",
-    "America"
-  ],
-  [
-    "あんない",
-    "guidance, leading (the way)"
-  ],
-  [
-    "あんしん",
-    "relief, peace of mind"
-  ],
-  [
-    "あんぜん",
-    "safety"
-  ],
-  [
-    "アルコオル",
-    "alcohol"
-  ],
-  [
-    "アルバイト",
-    "part-time job"
-  ],
-  [
-    "あやまる",
-    "to apologize"
-  ],
-  [
-    "ばい",
-    "twice, double, times"
-  ],
-  [
-    "ばんぐみ",
-    "program (e.g. TV)"
-  ],
-  [
-    "ばしょ",
-    "place, location"
-  ],
-  [
-    "べつ",
-    "different, another"
-  ],
-  [
-    "できる",
-    "to be able to do"
-  ],
-  [
-    "できる だけ",
-    "if at all possible, as much as possible"
-  ],
-  [
-    "テキスト",
-    "text, text book"
-  ],
-  [
-    "てつだう",
-    "to help, to assist, to take part in"
-  ],
-  [
-    "テニス",
-    "tennis"
-  ],
-  [
-    "てぶくろ",
-    "glove"
-  ],
-  [
-    "てら",
-    "temple"
-  ],
-  [
-    "てん",
-    "point"
-  ],
-  [
-    "てきとう",
-    "fitness, suitability"
-  ],
-  [
-    "いか",
-    "less than"
-  ],
-  [
-    "いがい",
-    "with the exception of"
-  ],
-  [
-    "いがく",
-    "medical science"
-  ],
-  [
-    "いけん",
-    "opinion"
-  ],
-  [
-    "いし",
-    "stone"
-  ],
-  [
-    "いじょう",
-    "more than, this is all"
-  ],
-  [
-    "いっしょうけんめい",
-    "with utmost effort"
-  ],
-  [
-    "いっぱい",
-    "full"
-  ],
-  [
-    "いと",
-    "thread"
-  ],
-  [
-    "いない",
-    "within"
-  ],
-  [
-    "いなか",
-    "countryside"
-  ],
-  [
-    "うけつけ",
-    "receipt"
-  ],
-  [
-    "うそ",
-    "a lie"
-  ],
-  [
-    "うち",
-    "within"
-  ],
-  [
-    "うで",
-    "arm"
-  ],
-  [
-    "うら",
-    "reverse side"
-  ],
-  [
-    "うりば",
-    "place where things are sold"
-  ],
-  [
-    "うんてんしゅ",
-    "driver"
-  ]
+  ["あ", "Ah"],
+  ["ああ", "like that, that way"],
+  ["あいさつ する", "greeting"],
+  ["あいだ", "space"],
+  ["あう", "to meet, to fit, to match"],
+  ["あかちゃん", "infant"],
+  ["あがる", "to rise"],
+  ["あかんぼう", "baby, infant"],
+  ["アクセサリイ", "accessory"],
+  ["あじ", "flavour, taste"],
+  ["アジア", "Asia"],
+  ["あす", "tomorrow"],
+  ["あさい", "shallow, superficial"],
+  ["あしおと", "sound of footsteps"],
+  ["あそび", "play, playing"],
+  ["あつまる", "to gather, to collect, to assemble"],
+  ["あつめる", "to collect, to assemble, to gather"],
+  ["アナウンサア", "announcer"],
+  ["アフリカ", "Africa"],
+  ["アメリカ", "America"],
+  ["あんない", "guidance, leading (the way)"],
+  ["あんしん", "relief, peace of mind"],
+  ["あんぜん", "safety"],
+  ["アルコオル", "alcohol"],
+  ["アルバイト", "part-time job"],
+  ["あやまる", "to apologize"],
+  ["ばい", "twice, double, times"],
+  ["ばんぐみ", "program (e.g. TV)"],
+  ["ばしょ", "place, location"],
+  ["べつ", "different, another"],
+  ["できる", "to be able to do"],
+  ["できる だけ", "if at all possible, as much as possible"],
+  ["テキスト", "text, text book"],
+  ["てつだう", "to help, to assist, to take part in"],
+  ["テニス", "tennis"],
+  ["てぶくろ", "glove"],
+  ["てら", "temple"],
+  ["てん", "point"],
+  ["てきとう", "fitness, suitability"],
+  ["いか", "less than"],
+  ["いがい", "with the exception of"],
+  ["いがく", "medical science"],
+  ["いけん", "opinion"],
+  ["いし", "stone"],
+  ["いじょう", "more than, this is all"],
+  ["いっしょうけんめい", "with utmost effort"],
+  ["いっぱい", "full"],
+  ["いと", "thread"],
+  ["いない", "within"],
+  ["いなか", "countryside"],
+  ["うけつけ", "receipt"],
+  ["うそ", "a lie"],
+  ["うち", "within"],
+  ["うで", "arm"],
+  ["うら", "reverse side"],
+  ["うりば", "place where things are sold"],
+  ["うんてんしゅ", "driver"]
 ]

@@ -11,7 +11,7 @@ describe('Quiz', () => {
       ['u', 'う'],
       ['e', 'え'],
     ];
-    const onAnswerClick = jest.fn();
+    const onAnswerClick = vi.fn();
 
     const { getByText } = render(
       <Quiz question={question} answers={answers} onAnswerClick={onAnswerClick} />
@@ -32,7 +32,7 @@ describe('Quiz', () => {
       ['u', 'う'],
       ['e', 'え'],
     ];
-    const onAnswerClick = jest.fn();
+    const onAnswerClick = vi.fn();
 
     const { getByText } = render(
       <Quiz question={question} answers={answers} onAnswerClick={onAnswerClick} />

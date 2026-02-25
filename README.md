@@ -21,7 +21,7 @@ Get the latest version for your platform:
 * **React:** A JavaScript library for building user interfaces.
 * **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
 *   **LESS:** A dynamic stylesheet language that extends CSS.
-*   **Jest:** A delightful JavaScript Testing Framework with a focus on simplicity.
+*   **Vitest:** A blazing fast unit test framework powered by Vite.
 *   **React Testing Library:** A set of utilities for testing React components.
 *   **Electron:** A framework for building cross-platform desktop apps with web technologies.
 *   **Electron Builder:** A complete solution to package and build a ready for distribution Electron app.
@@ -57,8 +57,8 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the Vitest test runner. By default, it runs in watch mode in development environments.
+See the Vitest documentation for more information.
 
 ### `npm run build`
 

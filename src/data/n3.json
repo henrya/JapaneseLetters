@@ -1,326 +1,83 @@
 [
-  [
-    "あいじょう",
-    "love; affection"
-  ],
-  [
-    "あかり",
-    "light; illumination; glow; gleam"
-  ],
-  [
-    "あける",
-    "to dawn, to become daylight"
-  ],
-  [
-    "あきらか",
-    "clear; obvious"
-  ],
-  [
-    "あくま",
-    "devil; demon; fiend; Satan"
-  ],
-  [
-    "あんき",
-    "memorization; learning by heart"
-  ],
-  [
-    "あらた",
-    "new; fresh; novel"
-  ],
-  [
-    "あらゆる",
-    "all; every"
-  ],
-  [
-    "あつまり",
-    "gathering; meeting; assembly; collection; attendance"
-  ],
-  [
-    "ぼうけん",
-    "adventure; venture"
-  ],
-  [
-    "ぶぶん",
-    "portion; section; part"
-  ],
-  [
-    "ぶん",
-    "part; segment; share; ration"
-  ],
-  [
-    "ぶんめい",
-    "civilization; culture"
-  ],
-  [
-    "ぶんせき",
-    "analysis"
-  ],
-  [
-    "ぶんや",
-    "field; sphere; realm; division; branch"
-  ],
-  [
-    "ちちおや",
-    "father"
-  ],
-  [
-    "ちへいせん",
-    "horizon (related to land)"
-  ],
-  [
-    "ちい",
-    "(social) position; status"
-  ],
-  [
-    "ちょうき",
-    "long-term"
-  ],
-  [
-    "だん",
-    "step; stair; grade; rank; level"
-  ],
-  [
-    "はずす",
-    "to remove; to take off; to detach; to unfasten; to undo; to miss"
-  ],
-  [
-    "かかえる",
-    "to hold or carry under or in the arms; to have (problems); to employ"
-  ],
-  [
-    "かげん",
-    "degree; extent; amount; balance; state; condition"
-  ],
-  [
-    "かわ",
-    "skin; hide; pelt; fur; rind; peel; husk; bark; shell; sheath; wrapping"
-  ],
-  [
-    "きょうぎ",
-    "game, match, contest"
-  ],
-  [
-    "ぎょうぎ",
-    "manners"
-  ],
-  [
-    "きょうきゅう",
-    "supply, provision"
-  ],
-  [
-    "きょうし",
-    "teacher (classroom)"
-  ],
-  [
-    "きょうじゅ",
-    "teaching, instruction, professor"
-  ],
-  [
-    "きょうちょう",
-    "emphasis, stress, stressed point"
-  ],
-  [
-    "きょうつう",
-    "commonness, community"
-  ],
-  [
-    "こうどう",
-    "action, conduct, behavior"
-  ],
-  [
-    "こうえん",
-    "lecture, address, speech"
-  ],
-  [
-    "こうふく",
-    "happiness"
-  ],
-  [
-    "こうげき",
-    "attack, strike"
-  ],
-  [
-    "こうへい",
-    "fairness, justice"
-  ],
-  [
-    "こうほ",
-    "candidate"
-  ],
-  [
-    "こうほう",
-    "behind, in the rear"
-  ],
-  [
-    "こうか",
-    "effect, effectiveness"
-  ],
-  [
-    "こうかん",
-    "exchange, interchange"
-  ],
-  [
-    "こい",
-    "deep (colour); dark; strong (flavour, smell); thick (consistency); dense"
-  ],
-  [
-    "こおり",
-    "ice; shaved ice"
-  ],
-  [
-    "いだい",
-    "great; grand; magnificent; outstanding"
-  ],
-  [
-    "ひdずけ",
-    "date; dating"
-  ],
-  [
-    "いた",
-    "board; plank; sheet (of metal); plate (of glass); pane; slab"
-  ],
-  [
-    "れつ",
-    "row; line; file; column; queue; rank; procession"
-  ],
-  [
-    "ながす",
-    "to drain; to pour; to spill; to shed (blood, tears); to wash away"
-  ],
-  [
-    "めんどう",
-    "trouble; bother; difficulty; care; attention"
-  ],
-  [
-    "もんく",
-    "complaint; grumbling; objection; phrase; words; expression"
-  ],
-  [
-    "むかい",
-    "facing; opposite; across the street; other side"
-  ],
-  [
-    "おまえ",
-    "you; presence (of a god, nobleman, etc.)"
-  ],
-  [
-    "ふこう",
-    "unhappiness; sorrow; misfortune; disaster; accident; death"
-  ],
-  [
-    "ふり",
-    "disadvantage; handicap; unfavorable position"
-  ],
-  [
-    "はなす",
-    "to release; to let go; to free; to set free; to let loose; to turn loose"
-  ],
-  [
-    "さまざま",
-    "varied; various"
-  ],
-  [
-    "し",
-    "Mr; Mrs; Ms; Miss; clan; he; him"
-  ],
-  [
-    "しまい",
-    "sisters"
-  ],
-  [
-    "たば",
-    "bundle, bunch"
-  ],
-  [
-    "たびたび",
-    "often, again and again"
-  ],
-  [
-    "たちば",
-    "standpoint, position"
-  ],
-  [
-    "ただ",
-    "ordinary, free of charge"
-  ],
-  [
-    "ただち に",
-    "at once, immediately"
-  ],
-  [
-    "たがい",
-    "mutual, reciprocal"
-  ],
-  [
-    "たいど",
-    "attitude, manner"
-  ],
-  [
-    "たいほ",
-    "arrest, apprehension"
-  ],
-  [
-    "うちゅう",
-    "universe, cosmos"
-  ],
-  [
-    "うごかす",
-    "to move, to shift"
-  ],
-  [
-    "うけとる",
-    "to receive, to get"
-  ],
-  [
-    "うっかり",
-    "carelessly, thoughtlessly"
-  ],
-  [
-    "うま",
-    "horse"
-  ],
-  [
-    "うまれ",
-    "birth, birthplace"
-  ],
-  [
-    "うん",
-    "fortune, luck"
-  ],
-  [
-    "うなる",
-    "to groan, to moan"
-  ],
-  [
-    "わかれ",
-    "parting; separation; farewell"
-  ],
-  [
-    "よみ",
-    "reading"
-  ],
-  [
-    "ようき",
-    "season, weather, cheerfulness"
-  ],
-  [
-    "ようきゅう",
-    "request, demand, requisition"
-  ],
-  [
-    "ようじん",
-    "care, precaution, guarding, caution"
-  ],
-  [
-    "ようす",
-    "aspect, state, appearance"
-  ],
-  [
-    "ようするに",
-    "in short, in a word, to sum up"
-  ],
-  [
-    "よい",
-    "good; excellent; fine; nice; pleasant; agreeable"
-  ]
+  ["あいじょう", "love; affection"],
+  ["あかり", "light; illumination; glow; gleam"],
+  ["あける", "to dawn, to become daylight"],
+  ["あきらか", "clear; obvious"],
+  ["あくま", "devil; demon; fiend; Satan"],
+  ["あんき", "memorization; learning by heart"],
+  ["あらた", "new; fresh; novel"],
+  ["あらゆる", "all; every"],
+  ["あつまり", "gathering; meeting; assembly; collection; attendance"],
+  ["ぼうけん", "adventure; venture"],
+  ["ぶぶん", "portion; section; part"],
+  ["ぶん", "part; segment; share; ration"],
+  ["ぶんめい", "civilization; culture"],
+  ["ぶんせき", "analysis"],
+  ["ぶんや", "field; sphere; realm; division; branch"],
+  ["ちちおや", "father"],
+  ["ちへいせん", "horizon (related to land)"],
+  ["ちい", "(social) position; status"],
+  ["ちょうき", "long-term"],
+  ["だん", "step; stair; grade; rank; level"],
+  ["はずす", "to remove; to take off; to detach; to unfasten; to undo; to miss"],
+  ["かかえる", "to hold or carry under or in the arms; to have (problems); to employ"],
+  ["かげん", "degree; extent; amount; balance; state; condition"],
+  ["かわ", "skin; hide; pelt; fur; rind; peel; husk; bark; shell; sheath; wrapping"],
+  ["きょうぎ", "game, match, contest"],
+  ["ぎょうぎ", "manners"],
+  ["きょうきゅう", "supply, provision"],
+  ["きょうし", "teacher (classroom)"],
+  ["きょうじゅ", "teaching, instruction, professor"],
+  ["きょうちょう", "emphasis, stress, stressed point"],
+  ["きょうつう", "commonness, community"],
+  ["こうどう", "action, conduct, behavior"],
+  ["こうえん", "lecture, address, speech"],
+  ["こうふく", "happiness"],
+  ["こうげき", "attack, strike"],
+  ["こうへい", "fairness, justice"],
+  ["こうほ", "candidate"],
+  ["こうほう", "behind, in the rear"],
+  ["こうか", "effect, effectiveness"],
+  ["こうかん", "exchange, interchange"],
+  ["こい", "deep (colour); dark; strong (flavour, smell); thick (consistency); dense"],
+  ["こおり", "ice; shaved ice"],
+  ["いだい", "great; grand; magnificent; outstanding"],
+  ["ひdずけ", "date; dating"],
+  ["いた", "board; plank; sheet (of metal); plate (of glass); pane; slab"],
+  ["れつ", "row; line; file; column; queue; rank; procession"],
+  ["ながす", "to drain; to pour; to spill; to shed (blood, tears); to wash away"],
+  ["めんどう", "trouble; bother; difficulty; care; attention"],
+  ["もんく", "complaint; grumbling; objection; phrase; words; expression"],
+  ["むかい", "facing; opposite; across the street; other side"],
+  ["おまえ", "you; presence (of a god, nobleman, etc.)"],
+  ["ふこう", "unhappiness; sorrow; misfortune; disaster; accident; death"],
+  ["ふり", "disadvantage; handicap; unfavorable position"],
+  ["はなす", "to release; to let go; to free; to set free; to let loose; to turn loose"],
+  ["さまざま", "varied; various"],
+  ["し", "Mr; Mrs; Ms; Miss; clan; he; him"],
+  ["しまい", "sisters"],
+  ["たば", "bundle, bunch"],
+  ["たびたび", "often, again and again"],
+  ["たちば", "standpoint, position"],
+  ["ただ", "ordinary, free of charge"],
+  ["ただち に", "at once, immediately"],
+  ["たがい", "mutual, reciprocal"],
+  ["たいど", "attitude, manner"],
+  ["たいほ", "arrest, apprehension"],
+  ["うちゅう", "universe, cosmos"],
+  ["うごかす", "to move, to shift"],
+  ["うけとる", "to receive, to get"],
+  ["うっかり", "carelessly, thoughtlessly"],
+  ["うま", "horse"],
+  ["うまれ", "birth, birthplace"],
+  ["うん", "fortune, luck"],
+  ["うなる", "to groan, to moan"],
+  ["わかれ", "parting; separation; farewell"],
+  ["よみ", "reading"],
+  ["ようき", "season, weather, cheerfulness"],
+  ["ようきゅう", "request, demand, requisition"],
+  ["ようじん", "care, precaution, guarding, caution"],
+  ["ようす", "aspect, state, appearance"],
+  ["ようするに", "in short, in a word, to sum up"],
+  ["よい", "good; excellent; fine; nice; pleasant; agreeable"]
 ]

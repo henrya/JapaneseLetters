@@ -9,7 +9,9 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
+
+  // Only consider it "open" if anchorEl is not null AND is actually in the document.  // This helps avoid the "anchorEl is invalid" warning in some testing environments.
+  const open = Boolean(anchorEl && document.body.contains(anchorEl));
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);

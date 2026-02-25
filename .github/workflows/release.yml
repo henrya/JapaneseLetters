@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to release (e.g., v1.0.1)'
+        description: 'Version to release (e.g., v1.1.0)'
         required: true
         type: string
 
@@ -44,7 +44,7 @@ jobs:
       run: npm ci --legacy-peer-deps
 
     - name: Run tests
-      run: npm test -- --watchAll=false
+      run: npm test -- --run
 
     - name: Build web app
       run: npm run build
@@ -127,7 +127,7 @@ jobs:
         
         ---
         
-        **Full Changelog**: https://github.com/${{ github.repository }}/compare/v0.0.0...${{ steps.get_version.outputs.version }}
+        **Full Changelog**: https://github.com/${{ github.repository }}/compare/v1.0.1...${{ steps.get_version.outputs.version }}
         EOF
 
     - name: Create Release

@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import Message from './Message';
 
 describe('Message', () => {
-  const mockOnNextQuestion = jest.fn();
+  const mockOnNextQuestion = vi.fn();
 
   beforeEach(() => {
     mockOnNextQuestion.mockClear();

@@ -7,94 +7,40 @@
     "あかし",
     "proof; evidence; sign; testimony; vindication / certificate; license; membership card / to testify (usu."
   ],
-  [
-    "じょう",
-    "unmarried woman / Miss / -ess; -ette."
-  ],
-  [
-    "もうしいれる",
-    "to propose; to suggest."
-  ],
-  [
-    "まっぷたつ",
-    "in two equal parts."
-  ],
-  [
-    "まうえ",
-    "just above; right overhead."
-  ],
-  [
-    "しんでん",
-    "temple; sacred place; shrine; sanctuary; tabernacle."
-  ],
-  [
-    "かろうじて",
-    "barely; narrowly; only just; with difficulty."
-  ],
-  [
-    "すすみ",
-    "progress."
-  ],
+  ["じょう", "unmarried woman / Miss / -ess; -ette."],
+  ["もうしいれる", "to propose; to suggest."],
+  ["まっぷたつ", "in two equal parts."],
+  ["まうえ", "just above; right overhead."],
+  ["しんでん", "temple; sacred place; shrine; sanctuary; tabernacle."],
+  ["かろうじて", "barely; narrowly; only just; with difficulty."],
+  ["すすみ", "progress."],
   [
     "みずけ",
     "water content; moisture; juiciness; dampness / water vapor (vapour); steam / dropsy; edema; oedema."
   ],
-  [
-    "へん",
-    "compilation (of a text); editing / volume (of a text) / completed literary work"
-  ],
-  [
-    "ぼうふう",
-    "storm; windstorm; gale"
-  ],
-  [
-    "ぼっしゅう",
-    "forfeiture; seizure; confiscation; impounding"
-  ],
+  ["へん", "compilation (of a text); editing / volume (of a text) / completed literary work"],
+  ["ぼうふう", "storm; windstorm; gale"],
+  ["ぼっしゅう", "forfeiture; seizure; confiscation; impounding"],
   [
     "みんしゅく",
     "pension; guesthouse; bed and breakfast; private home providing lodging for travelers (travellers)"
   ],
-  [
-    "ゆうび",
-    "grace; refinement; elegance; daintiness"
-  ],
-  [
-    "ゆうぼく",
-    "nomadism"
-  ],
-  [
-    "ゆさぶる",
-    "to shake; to jolt"
-  ],
+  ["ゆうび", "grace; refinement; elegance; daintiness"],
+  ["ゆうぼく", "nomadism"],
+  ["ゆさぶる", "to shake; to jolt"],
   [
     "じょし",
     "particle; postpositional word in Japanese grammar that functions as an auxiliary to a main word"
   ],
-  [
-    "じょこう",
-    "going slowly"
-  ],
-  [
-    "じょがい",
-    "exception; exclusion"
-  ],
-  [
-    "しょうにか",
-    "pediatrics"
-  ],
+  ["じょこう", "going slowly"],
+  ["じょがい", "exception; exclusion"],
+  ["しょうにか", "pediatrics"],
   [
     "あせる",
     "to be in a hurry; to be impatient; to be flustered; to lose one's presence of mind; to be surprised"
   ],
-  [
-    "しょうする",
-    "to take the name of; to call oneself / to pretend; to feign; to purport"
-  ],
-  [
-    "つう",
-    "connoisseur; authority / counter for letters, notes, documents, etc."
-  ],
+  ["しょうする", "to take the name of; to call oneself / to pretend; to feign; to purport"],
+  ["つう", "connoisseur; authority / counter for letters, notes, documents, etc."],
   [
     "カルテ",
     "patient's chart; clinical records / record (e.g. student, equipment maintenance, etc.)"
@@ -103,216 +49,60 @@
     "のがす",
     "to miss (e.g. a chance); to lose; to let get away / to set free; to let go / to fail to"
   ],
-  [
-    "え",
-    "gathering (esp. Buddhist, festive, etc.)"
-  ],
-  [
-    "ほしもの",
-    "things dried in the sun (esp. clothes, dyed cloth, etc.)"
-  ],
+  ["え", "gathering (esp. Buddhist, festive, etc.)"],
+  ["ほしもの", "things dried in the sun (esp. clothes, dyed cloth, etc.)"],
   [
     "やかた",
     "mansion; palace; manor house; castle / nobleman; noblewoman; dignitary / cabin (on a boat, carriage, etc.)"
   ],
-  [
-    "ああ",
-    "Ah!, Oh!, Alas!"
-  ],
-  [
-    "あっけない",
-    "not enough, too quick (short long etc.)"
-  ],
-  [
-    "あきうど",
-    "trader, shopkeeper, merchant"
-  ],
-  [
-    "あきま",
-    "vacancy, room for rent or lease"
-  ],
-  [
-    "あきらめ",
-    "resignation, acceptance, consolation"
-  ],
-  [
-    "あきれる",
-    "to be amazed, to be shocked"
-  ],
-  [
-    "あく",
-    "evil, wickedness"
-  ],
-  [
-    "あくび",
-    "unlucky day"
-  ],
-  [
-    "あくる",
-    "next, following"
-  ],
-  [
-    "あこがれ",
-    "yearning, longing, aspiration"
-  ],
-  [
-    "あご",
-    "chin"
-  ],
-  [
-    "あさ",
-    "flax, linen, hemp"
-  ],
-  [
-    "あさって",
-    "day after tomorrow"
-  ],
-  [
-    "あさねぼう",
-    "oversleeping, late riser"
-  ],
-  [
-    "あさましい",
-    "wretched, miserable, shameful, mean, despicable, abject"
-  ],
-  [
-    "あざ",
-    "section of village"
-  ],
-  [
-    "あざむく",
-    "to deceive"
-  ],
-  [
-    "あざやか",
-    "vivid, clear, brilliant"
-  ],
-  [
-    "あざわらう",
-    "to sneer at, to ridicule"
-  ],
-  [
-    "あじわい",
-    "flavour, meaning, significance"
-  ],
-  [
-    "あずま",
-    "east, Eastern Japan"
-  ],
-  [
-    "あそこ",
-    "(1. (uk) there, over there, that place, 2. (X) (col) genitals)"
-  ],
-  [
-    "あたい",
-    "value, price, cost, worth, merit"
-  ],
-  [
-    "あたいする",
-    "to be worth, to deserve, to merit"
-  ],
-  [
-    "あたし",
-    "I (fem)"
-  ],
-  [
-    "あたり",
-    "hit, success, reaching the mark, per ..., vicinity, neighborhood"
-  ],
-  [
-    "あたりまえ",
-    "usual, common, ordinary, natural, reasonable, obvious"
-  ],
-  [
-    "あだびと",
-    "another person, unrelated person, outsider, stranger"
-  ],
-  [
-    "あちこち",
-    "here and there"
-  ],
-  [
-    "あちら",
-    "(1. there, yonder, that)"
-  ],
-  [
-    "あちらこちら",
-    "here and there"
-  ],
-  [
-    "あっか",
-    "deterioration, growing worse, aggravation, degeneration, corruption"
-  ],
-  [
-    "あっこう",
-    "abuse, insult, slander, evil speaking"
-  ],
-  [
-    "アッサリ",
-    "easily, readily, quickly"
-  ],
-  [
-    "あっぱく",
-    "pressure, coercion, oppression"
-  ],
-  [
-    "あつかい",
-    "treatment, service"
-  ],
-  [
-    "あつまる",
-    "to gather, to collect"
-  ],
-  [
-    "あいそ",
-    "sociability n."
-  ],
-  [
-    "あいぞう",
-    "love and hate n."
-  ],
-  [
-    "あいたい",
-    "relativity adj; adv."
-  ],
-  [
-    "あいだがら",
-    "good relations n."
-  ],
-  [
-    "あいま",
-    "interval n."
-  ],
-  [
-    "あえて",
-    "purposely; not necessarily adv."
-  ],
-  [
-    "あおぐ",
-    "to look up to; to respect trans."
-  ],
-  [
-    "あか",
-    "dirt; filth; grime n."
-  ],
-  [
-    "あかじ",
-    "red letter; red writing n."
-  ],
-  [
-    "あかす",
-    "to pass (the night); to reveal trans."
-  ],
-  [
-    "あからむ",
-    "to redden; to blush intrans."
-  ],
-  [
-    "あがり",
-    "rise; increase; ascent​ n."
-  ],
-  [
-    "うなる",
-    "to groan, to moan n."
-  ]
+  ["ああ", "Ah!, Oh!, Alas!"],
+  ["あっけない", "not enough, too quick (short long etc.)"],
+  ["あきうど", "trader, shopkeeper, merchant"],
+  ["あきま", "vacancy, room for rent or lease"],
+  ["あきらめ", "resignation, acceptance, consolation"],
+  ["あきれる", "to be amazed, to be shocked"],
+  ["あく", "evil, wickedness"],
+  ["あくび", "unlucky day"],
+  ["あくる", "next, following"],
+  ["あこがれ", "yearning, longing, aspiration"],
+  ["あご", "chin"],
+  ["あさ", "flax, linen, hemp"],
+  ["あさって", "day after tomorrow"],
+  ["あさねぼう", "oversleeping, late riser"],
+  ["あさましい", "wretched, miserable, shameful, mean, despicable, abject"],
+  ["あざ", "section of village"],
+  ["あざむく", "to deceive"],
+  ["あざやか", "vivid, clear, brilliant"],
+  ["あざわらう", "to sneer at, to ridicule"],
+  ["あじわい", "flavour, meaning, significance"],
+  ["あずま", "east, Eastern Japan"],
+  ["あそこ", "(1. (uk) there, over there, that place, 2. (X) (col) genitals)"],
+  ["あたい", "value, price, cost, worth, merit"],
+  ["あたいする", "to be worth, to deserve, to merit"],
+  ["あたし", "I (fem)"],
+  ["あたり", "hit, success, reaching the mark, per ..., vicinity, neighborhood"],
+  ["あたりまえ", "usual, common, ordinary, natural, reasonable, obvious"],
+  ["あだびと", "another person, unrelated person, outsider, stranger"],
+  ["あちこち", "here and there"],
+  ["あちら", "(1. there, yonder, that)"],
+  ["あちらこちら", "here and there"],
+  ["あっか", "deterioration, growing worse, aggravation, degeneration, corruption"],
+  ["あっこう", "abuse, insult, slander, evil speaking"],
+  ["アッサリ", "easily, readily, quickly"],
+  ["あっぱく", "pressure, coercion, oppression"],
+  ["あつかい", "treatment, service"],
+  ["あつまる", "to gather, to collect"],
+  ["あいそ", "sociability n."],
+  ["あいぞう", "love and hate n."],
+  ["あいたい", "relativity adj; adv."],
+  ["あいだがら", "good relations n."],
+  ["あいま", "interval n."],
+  ["あえて", "purposely; not necessarily adv."],
+  ["あおぐ", "to look up to; to respect trans."],
+  ["あか", "dirt; filth; grime n."],
+  ["あかじ", "red letter; red writing n."],
+  ["あかす", "to pass (the night); to reveal trans."],
+  ["あからむ", "to redden; to blush intrans."],
+  ["あがり", "rise; increase; ascent​ n."],
+  ["うなる", "to groan, to moan n."]
 ]
