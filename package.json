@@ -2,18 +2,19 @@
   "name": "japanese-letters-react",
   "version": "1.1.0",
   "private": true,
+  "type": "module",
   "description": "A simple quiz app for learning Japanese letters and vocabulary",
   "author": "Henry Algus",
   "homepage": "./",
-  "main": "electron.js",
+  "main": "electron.cjs",
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production",
+    "start": "webpack serve --config webpack.config.cjs --mode development",
+    "build": "webpack --config webpack.config.cjs --mode production",
     "test": "cross-env NODE_OPTIONS='--no-deprecation' vitest",
     "electron:dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development electron .\"",
     "electron:build": "npm run build && electron-builder",
-    "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --config eslint.config.cjs",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix --config eslint.config.cjs",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,less,md,json}\"",
     "coverage": "vitest run --coverage",
     "ci": "npm run lint && tsc --noEmit && npm run coverage"
@@ -27,8 +28,8 @@
         "to": "."
       },
       "package.json",
-      "electron.js",
-      "preload.js"
+      "electron.cjs",
+      "preload.cjs"
     ],
     "icon": "public/icon.png",
     "directories": {
